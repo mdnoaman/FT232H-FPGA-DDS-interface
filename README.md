@@ -17,8 +17,7 @@ an FT232H board to obtain full speed USB 2.0 communication speed (480Mbps). The 
 read the FT232H data synchronously using the clock from the FT board. The data is then transferred to the BRAM (which again, runs with the FT clock). BRAM is used in dual port mode which allows for reading of the data at a different clock (125MHz, this is the clock used to transfer the data to DDS). Since, the data is transferred only in the beginning, that leaves no conflict between when the DDS is controlled. The depth of the BRAM is above 28000 words (each word containing 64bits). In such setting, data for about 56000 new frequencies
 can be transfered in about 11ms.
 
-The schematic of the fT232H + FPGA + DDS is depicted in AD9959_FPGA_FT232H_schematics.png
-
+The schematic of the fT232H + FPGA + DDS is depicted [here](https://github.com/mdnoaman/FT232H-FPGA-DDS-interface/blob/80740cd9f6ae0a7318a6581928db9e9b108dc234/AD9959_FPGA_FT232H_schematics.png)
 
 I set up two different modes of operation for the driving of the DDS:
 
@@ -32,7 +31,6 @@ Mode2. In this mode the RF is swept up and down rapidly in a general shape, call
 
 
 
-https://github.com/mdnoaman/FT232H-FPGA-DDS-interface/blob/80740cd9f6ae0a7318a6581928db9e9b108dc234/AD9959_FPGA_FT232H_schematics.png
 
 
 
