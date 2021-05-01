@@ -32,7 +32,7 @@ Mode2. In this mode the RF is swept up and down rapidly in a general shape, call
 
 
 
-
+ FT232H-FPGA-DDS-interface/AD9959_FPGA_FT232H_schematics.png 
 
 
 
