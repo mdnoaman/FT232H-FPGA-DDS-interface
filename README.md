@@ -7,7 +7,7 @@ available, eg. linear sweep, single tone as described [here](https://www.analog.
 In order to synchronize the DDS clock with the SPI clock, we generate the clock from the FPGA that is fed to the DDS ref clock. The SPI clock runs at 125 MHz which takes 2 clocks (8ns) 
 for transfer of 1 Byte of data in the 4-lane SPI mode.
 
-The FPGA used for this purspose is CMOD A7 from [Digilent][https://reference.digilentinc.com/reference/programmable-logic/cmod-a7/start]. Any other FPGA can be used, I picked this one mainly because it was cheap + it has a lot block RAM.
+The FPGA used for this purspose is CMOD A7 from [Digilent](https://reference.digilentinc.com/reference/programmable-logic/cmod-a7/start). Any other FPGA can be used, I picked this one mainly because it was cheap + it has a lot block RAM.
 
 The frequency profiles and mode settings are stored in the BRAM of the FPGA which is transferred on demand at a very high speed with hardware timing which is the key requirement for
 generation of precisely timed RF.
